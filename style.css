@@ -3,7 +3,7 @@
             height: 100vh;
             background: url(./img/2473674.jpg);
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            /* background-attachment: fixed; */
             background-size: cover;
         }
         h1
@@ -49,7 +49,26 @@
 
         }
         th, td {
-  border: 1px solid black;
-  border-radius: 10px;
-}
+        border: 1px solid black;
+        border-radius: 10px;
+    }
         
+    @media screen and (max-width: 800px){
+    .box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 82vh;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .time_table {
+        background: rgb(0,212,255);
+        background: linear-gradient(
+    90deg
+    , rgba(0,212,255,0.3379726890756303) 0%, rgba(238,20,242,0.18671218487394958) 32%);
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+}
